@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <div id="right_nav">
+            <a href="">
+                <p>Progress</p>
+            </a>
+            <a href="">
+                <p>Calculator</p>
+            </a>
+            <a href="./exercise-list.html">
+                <p>Exercises and plans</p>
+            </a>
+            <a href="">
+                <p>My personal trainer</p>
+            </a>
+            <a href=""><i class="fa fa-comments commentIcon"></i></a>
+        </div>
+        <style>
+            #right_nav {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+            z-index: 1000; /* Ensure it stays in front of other content */
+            display: flex;
+            justify-content: space-around; /* Space out the links */
+            align-items: center;
+        }
+
+        #right_nav a {
+            text-decoration: none;
+            color: #333; /* Dark text color */
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+            display: flex;
+            align-items: center;
+        }
+
+        #right_nav a p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #right_nav a:hover {
+            background-color: #007bff; /* Blue background on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        #right_nav a:hover p {
+            color: #fff; /* Ensure text inside <p> also turns white on hover */
+        }
+
+        #right_nav a:hover .commentIcon {
+            color: #fff; /* Ensure icon also turns white on hover */
+        }
+
+        .content {
+            padding: 80px 20px; /* Add top padding to avoid overlap with the fixed navbar */
+        }
+
+        .commentIcon {
+            font-size: 20px;
+        }
+        </style>
+        <form>
+            <h1>Contact Us Form</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            
+            <textarea required></textarea>
+            <h5>We will soon give you a feedback......</h5>
+            <input type="submit" value="Send" id="button">
+        </form>
+    </div>
+</body>
+</html>

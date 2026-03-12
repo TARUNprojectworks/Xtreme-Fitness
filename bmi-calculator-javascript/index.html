@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./media/favicon/1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/export_navbar&footerA.css">
+   <link rel="stylesheet" href="./CSS/export_navbarB.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+  integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+  crossorigin="anonymous"></script>
+    <title>BMI Calculator</title>
+</head>
+<body>
+  <header>
+    <div id="container">
+
+    <div id="left_nav">
+      <a href="#"><img src="./media/last edit.png" alt=""></a>
+  </div>
+  <div id="right_nav">
+      <a href="">
+          <p>   </p>
+      </a>
+      <a href="./bmi-calculator-javascript/index.html">
+          <p>Calculator</p>
+      </a>
+      <a href="../exercise-list.html">
+          <p>Exercises and plans</p>
+      </a>
+      <a href="./trainer.html">
+          <p>My personal trainer</p>
+      </a>
+      <style>
+        #right_nav {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 20px;
+            width: 200px;
+        }
+
+        #right_nav a {
+            display: block;
+            text-decoration: none;
+            color: #333; /* Dark text color */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        }
+
+        #right_nav a p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #right_nav a:hover {
+            background-color: #007bff; /* Blue background on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        #right_nav a:hover p {
+            color: #fff; /* Ensure text inside <p> also turns white on hover */
+        }
+    </style>
+      
+      <!-- Ram's change -->
+      
+      
+
+
+
+      <!--  -->
+
+  </div>
+</div>`
+
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="box">
+        <h1>BMI Calculator</h1>
+        <div class="content">
+
+
+          <div class="input">
+              <label for="height">Age</label>
+              <input type="text" class="text-input" id="age" autocomplete="off" required/>
+          </div>
+
+          <div class="gender">
+
+              <label class="container">
+                  <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                  <span class="checkmark"></span>
+                </label>
+
+
+              <label class="container">
+                  <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+          </div>
+
+          <div class="containerHW">
+          <div class="inputH">
+            <label for="height">Height(cm)</label>
+            <input type="number" id="height" required>
+          </div>
+
+          <div class="inputW">
+            <label for="weight">Weight(kg)</label>
+            <input type="number" id="weight" required>
+          </div>
+        </div>
+
+          <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+        </div>
+        <div class="result">
+          <p>Your BMI is</p>
+          <div id="result">00.00</div>
+          <p class="comment"></p>
+        </div>
+
+      </div>
+    </div>
+
+
+    
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalText"></p>
+  </div></div>
+  </section>
+  <footer>
+    <div class="footerv">
+      
+    </div>
+</footer>
+    
+    
+
+
+
+    
+<script src="script.js"></script>
+<script type="module">
+  let footer1 = document.querySelector(".footerv")
+  import { navbar, footer } from "./Xtreme Fitness/scripts/Export_navbar&footerA.js"
+
+  footer1.innerHTML = footer()
+
+</script>
+
+
+</body>
+</html>
